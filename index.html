@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.1/css/font-awesome.css"
+        integrity="sha512-LKG0Zi6duJ5mwncLtQVchN0iF8fWmcxApuX9pqGq7ITgwQDWR9EqZFsrV9TXfE9pPRa1J6GVnsBl7gKxAyllaA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Cronometro</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <section class="main-container__s1">
+            <img src="./images/Football team_Outline.png" alt="" class="main-container__s1__image">
+        </section>
+        <section class="main-container__s2">
+            <div class="tiempo" id="tiempo">
+                <h1 class="main-container__s2__title">00:00:00.000</h1>
+            </div>
+            <div class="main-container__s2_controles">
+                <div class="btn" onclick='iniciar()'>
+                    <i class="fa fa-play-circle" aria-hidden="true"></i>
+
+                </div>
+                <div class="btn">
+                    <i class="fa fa-pause-circle-o" aria-hidden="true" onclick='pausar()'></i>
+
+                </div>
+                <div class="btn">
+                    <i class="fa fa-stop-circle-o" aria-hidden="true" onclick=' reiniciar()'></i>
+
+                </div>
+            </div>
+            <hr class="main-container__s2__line">
+            <!-- <div class="main-container__s2_lap">
+                <p class="lap">00:00</p>
+                <p class="lap">00:00</p>
+                <p class="lap">00:00</p>
+            </div> -->
+        </section>
+    </div>
+    <footer>
+        <p class="attribution">
+          Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+          Coded by <a href="#">Jose Marcano</a>.
+        </p>
+      </footer>
+    <script src="main.js"></script>
+</body>
+
+</html>
